@@ -1,22 +1,31 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
+        <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
     </head>
     <body>
-        <div> <!--상단바-->
+        <div id="top"> <!--상단바-->
             <img src="https://www.instagram.com
 /static/images/web/mobile_nav_type_logo.png
 /735145cfe0a4.png"/>
-            <input type="search" value="검색"/>
+            <input type="search" value="🔍검색"/>
+            <div> <!--상단바 오른쪽 아이콘-->
+                <i class="fas fa-home"></i>
+                <i class="far fa-paper-plane"></i>
+                <i class="far fa-compass"></i>
+                <i class="far fa-heart"></i>
+            </div><!--상단바 오른쪽 아이콘 끝-->
         </div><!--상단바 끝-->
         <div id="profile"><!--프로필 영역-->
-            <img src="https://cdn.pixabay.com
-/photo/2016/11/23/13/50/mountains-1852955_1280.jpg"
-width="100px"/>
-                <div>
-                    <h2>leeeejsp</h2>
-                    <button>프로필 편집</button>
-                </div>
+            <div><!--프로필 사진-->
+                <img class="circle_pic" src="https://cdn.pixabay.com
+/photo/2016/11/23/13/50/mountains-1852955_1280.jpg" id="profile_pic"
+/>
+            </div><!--프로필 사진 끝-->
+            <div id="profile info">
+                <div id="id"><strong>leeeejsp</strong><i class="fas fa-cog"></i></div>
+                <button>프로필 편집</button>
+            </div>
         </div><!--프로필 영역 끝-->
         <p>
         <div><!--소개글-->
@@ -38,54 +47,67 @@ width="100px"/>
         </div><!--소개글 끝-->
         </p>
         <p>
-        <div><!--하이라이트-->
+        <div id="highlight_area"><!--하이라이트-->
             <div class="highlight"><!--하이라이트1-->
-                <div><!--하이라이트1 사진-->
-                <img src="https://cdn.pixabay.com
-/photo/2020/07/27/14/34/forest-5442598_1280.jpg" height="35px"/>
+                <div class="highlight_pic"><!--하이라이트1 사진-->
+                    <img  class="circle_pic" src="https://cdn.pixabay.com
+/photo/2020/07/27/14/34/forest-5442598_1280.jpg"/>
                 </div><!--하이라이트1 사진 끝-->
                 <div><!--하이라이트1 이모티콘-->
                     😎
                 </div><!--하이라이트1 이모티콘 끝-->
             </div><!--하이라이트1 끝-->
             <div class="highlight"><!--하이라이트2-->
-                <div><!--하이라이트2 사진-->
-                <img src="https://cdn.pixabay.com
-/photo/2016/02/09/19/57/aurora-1190254__480.jpg" height="35px"/>
+                <div class="highlight_pic"><!--하이라이트2 사진-->
+                    <img class="circle_pic" src="https://cdn.pixabay.com
+/photo/2016/02/09/19/57/aurora-1190254__480.jpg"/>
                 </div><!--하이라이트2 사진 끝-->
                 <div><!--하이라이트2 이모티콘-->
                     😁
                 </div><!--하이라이트2 이모티콘 끝-->
             </div><!--하이라이트2 끝-->
+            <div></div><!--하이라이트 오른쪽 여백-->
         </div><!--하이라이트 끝-->
-        <div><!--상태표시줄-->
-            <div>
+        <div id="stat_bar"><!--상태표시줄-->
+            <div class="stat">
                 게시물<br/>
                 133
             </div>
-            <div>
+            <div class="stat">
                 팔로워<br/>
                 409
             </div>
-            <div>
+            <div class="stat">
                 팔로우<br/>
                 189
             </div>
         </div><!--상태표시줄 끝-->
-        <div><!--아이콘-->
-            아이콘 들어가 자리  
+        <div id="sub_icons"><!--아이콘-->
+            <div class="selected">
+                <i class="fas fa-border-all"></i>
+            </div>
+            <div><i class="fas fa-film"></i></div>
+            <div><i class="far fa-play-circle"></i></div>
+            <div><i class="far fa-bookmark"></i></div>
+            <div><i class="fas fa-user-tag"></i></div>
         </div><!--아이콘 끝-->
 
         <div><!--게시물 썸네일-->
-            <img src="thumbnails/1.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/2.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/3.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/4.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/5.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/6.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/7.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/8.jpg" width="32%" height="32%"/>
-            <img src="thumbnails/9.jpg" width="32%" height="32%"/>
+            <div class="thumbnail_grid"><!--게시물 썸네일 1라인-->
+                <img src="thumbnails/1.jpg" width="100%"/>
+                <img src="thumbnails/2.jpg" width="100%"/>
+                <img src="thumbnails/3.jpg" width="100%"/>
+            </div><!--게시물 썸네일 1라인 끝-->
+            <div class="thumbnail_grid"><!--게시물 썸네일 2라인-->
+                <img src="thumbnails/4.jpg" width="100%"/>
+                <img src="thumbnails/5.jpg" width="100%"/>
+                <img src="thumbnails/6.jpg" width="100%"/>
+            </div><!--게시물 썸네일 2라인 끝-->
+            <div class="thumbnail_grid"><!--게시물 썸네일 3라인-->
+                <img src="thumbnails/7.jpg" width="100%"/>
+                <img src="thumbnails/8.jpg" width="100%"/>
+                <img src="thumbnails/9.jpg" width="100%"/>
+            </div><!--게시물 썸네일 3라인 끝-->
         </div><!--게시물 썸네일 끝-->
         </p>
     </body>
