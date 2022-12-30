@@ -1,43 +1,10 @@
-<style>
-    .myGrid{
-        display: grid;
-        grid-template-rows: 3fr 1fr;
-    }
-    #first{background-color: yellow;}
-    #second{background-color: green;}
-
-    div{
-        width: 150px;
-        height: 150px;
-    }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-        border: solid white 1px;
-        border-radius: 50%;
-    }
-    @media (max-width:600px){
-        p {background-color: pink;}
-        .desktop{display: none;}
-        .mobile{display: block;}
-    }
-    @media (min-width:600px){
-        p {background-color: blue;}
-        .desktop{display: block;}
-        .mobile{display: none;}
-    }
-
-
-</style>
-
-<div class="myGrid">
-    <div id="first">1번영역</div>
-    <div id="second">2번영역</div>
+<script src="prac.js"></script>
+<div>
+    <strong>이름 : </strong><span id="nameHere">None</span>
+    <input id="nameEditButton" type="button" value="수정"/>
 </div>
-<img class="desktop" src="thumbnails/1.jpg">
-<p>
-    화면에 어떻게 표시되나요??
-</p>
-<img class="mobile" src="thumbnails/1.jpg">
+
+<div id="editNameField" style="display: none">
+    <input id="newName" type="text" value="새 이름 입력"/>
+    <input id="okButton" type="button" value="확인"/>
+</div>
